@@ -12,7 +12,7 @@ endif()
 project ("ZSpace")
 
 # Add source to this project's executable.
-add_executable (ZSpace "ZSpace.cpp" "ZSpace.h")
+add_executable (ZSpace "ZSpace.cpp" "ZSpace.h" "ZStrings/ZString.h" "ZStrings/ZString.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET ZSpace PROPERTY CXX_STANDARD 20)
