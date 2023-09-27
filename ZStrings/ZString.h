@@ -20,17 +20,18 @@ namespace ZSpace {
 			char operator [ ] (size_t i) const;  
 
 			// operator functions
-			void operator =(const char* s);
+			void operator =(const char* s); 
 
 			// friend functions and operators 
 			friend std::ostream& operator << (std::ostream& os, const ZString& s); 
+
+			// string functions 
 			
-		private:
+			
+		protected:
 			char* str; 
 			size_t size; 
-			size_t allocated; 
-
-			void allocate(size_t s); 
+			size_t allocated;  
 	};
 }
 #endif
